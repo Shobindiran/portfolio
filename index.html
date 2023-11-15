@@ -4,24 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pangolin&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Pangolin&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
+        <div class="container">
             <div class="header-wrapper">
-                <h6>Shobindiran</h6>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">TOOLS AND SKILLS </a></li>
-                    <lI><a href="#">PROJECTS</a></lI>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-                <span><i class="fa-duotone fa-bars"></i></span>
+                <div class="row  align-items-center p-3">
+                    <div class="col-10 col-md-5">
+                        <div>
+                            <a href="#">&lt Shobindiran /&gt</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2 col-md-7 text-end">
+                        <div>
+                            <ul class="d-flex justify-content-between ">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">TOOLS AND SKILLS</a></li>
+                                <li><a href="#">FEATURED PROJECTS</a></li>
+                                <li><a href="#">ALL PROJECTS</a></li>
+                                <li><a href="#">CONTACT ME</a></li>
+                            </ul>
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-wrapper">  
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div>
+                            <h2><span>Hi,</span> I'm Shobindiran</h2>
+                            <h3>A frontend developer</h3>
+                            <p>I enjoy solving complex problems. Frequently praised as 
+                                detail-oriented by my peers, I can be relied upon to help 
+                                your company achieve its goals by providing sustainable and
+                                 scalable solutions.
+                            </p>
+                            <ul>
+                                <li><a href="https://github.com/Shobindiran" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shobindiran/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            </ul>
+                            <div class="d-flex align-items-center gap-4">
+                                <span><a href="#" class="mybtn solid"><i class="bi bi-chat-left-text-fill"></i><span>GET IN TOUCH</span></a></span>
+                                <span><a href="#" class="mybtn outlined"><i class="fa-solid fa-code"></i><span>SEE MY WORK</span></a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div >
+                            <img src="./images/banner-images/coder.svg" alt="coder-image" class="w-100">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stack">
+        <div class="container">
+            <div class="stack-wrapper">
+                <div class="row text-center">
+                    <div class="col-lg-6 order-2 order-lg-1 ">
+                        <div>
+                            <img src="./images/stack-images/stack-coder.svg" alt="coder-image" >
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
+                        <div>
+                            <h2>My Tech Stack</h2>
+
+                            <div class="row align-items-center">
+                                <div class="col-4 col-md-2">
+                                    <h6>HTML5</h6>
+                                    <img src="./images/stack-images/html-5.svg" alt="html-5" >
+                                </div>
+                                <div class=" col-4 col-md-2">
+                                    <h6 >CSS3</h6>
+                                    <img src="./images/stack-images/css3.svg" alt="css3" >
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <h6 class="d-inline-block mb-3">Bootstrap<h6>
+                                    <img src="./images/stack-images/bootstrap-5.svg" alt="bootstrap-5" >
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <h6>JavaScript</h6>
+                                    <img src="./images/stack-images/javascript.svg" alt="javascript">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wave">
+        <img src="./images/wave-images/footer-wave-dark.svg" alt="wave design">
+    </section>
+
+    <section class="connect">
+        <div class="container">
+            <div class="connect-wrapper">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <h3>Connect with me</h3>
+                        <div class="d-flex justify-content-between">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-github"></i><span>Github</span></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i><span>shobindiran@gmail.com</span></a></li>
+                            </ul>
+
+                            <div  class="text-end">
+                                <img src="./images/connect-images/message.svg" alt="message-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0">
+                        <h3>Say Hi</h3>
+                        <form id="message-form">
+                            <div>
+                                <label for="name">Name*</label>
+                                <input type="text">
+                            </div>
+    
+                            <div>
+                                <label for="email">Email*</label>
+                                <input type="text">
+                            </div>
+    
+                            <div>
+                                <label for="message">Message*</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            </div>
+    
+                            <div>
+                                <button type="submit" class="mybtn outlined"><span>SEND</span><i class="fa-solid fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

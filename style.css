@@ -1,98 +1,287 @@
 *{
     padding:0px;
-    margin:0px;
-    box-sizing:border-box;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* common styling  starst*/
+:root {
+    --first-color: #ffffff;
+    --second-color: #c6ff00;
+    --first-bg-dark:#161625;
+}
+
+body{
     color: var(--first-color);
-    font-family:'inter',sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-
-/* root starts */
-
-:root{
-    --first-color:#ffffff;
-    --second-color:#c6ff00;
-}
-
-/* root ends */
-
-/* common styles starts*/
-
-ul{
+ul {
     list-style: none;
 }
 
-/* common style ends */
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-size:60px;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 34px;
+    font-weight: 400;
+}
+
+section{
+    padding-block:100px;
+}
+
+.mybtn{   
+    padding: 6px 16px; 
+}
+
+.mybtn.solid{
+    background-color: var(--second-color);
+    color: var(--first-bg-dark);
+    border-radius:30px;
+}
+
+.mybtn.outlined{
+    background-color: transparent;
+    border: var(--second-color) 1px solid;
+    color: var(--second-color);
+}
+/* common styling  end */
 
 /* header starts */
-
-.header-wrapper{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:15px 30px;
-    background-color:#091c34;
+header{
+    background-color: #091c34;
+    font-family: "Poppins", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: fixed;
-    top:0px;
-    width:100%;
+    width: 100%;
+    top: 0px;
 }
 
-.header-wrapper ul{
-    display: flex;
-    gap:30px;
-    font-size:14px;
+header .container{
+    max-width:1500px;
 }
 
-.header-wrapper h6{
-    font-size:25px;
-    font-weight:600;
-    font-family:'poppins',sans-serif;
-}
-.header-wrapper ul li a{
+.header-wrapper ul>li>a{
+    color:var(--first-color);
+    font-size: 14px;
+    font-weight: 500;
     padding: 7px;
-    text-decoration: none;
-    transition:1s;
-
-}
-.header-wrapper ul li a:hover{
-    background-color: #ffffff1f;
-    
+    border-radius: 3px;
+    transition: background 0.5s;
 }
 
-.header-wrapper span{
+.header-wrapper ul>li>a:hover {
+    background-color: #ffffff3e;
+}
+
+.header-wrapper>div>div:first-child>div a{
+    color:var(--first-color);
+    font-size:20px;
+    font-weight:500;
+}
+
+.header-wrapper>div>div:last-child>div span i{
+    font-size: 25px;
     display: none;
 }
-
 /* header ends */
 
-
-/* media querry starts */
-
-@media (max-width:320px)  {
-     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-
-
+/* banner starts */
+.banner{
+    background:url(./images/banner-images/background-image.svg) ;
+    background-size: cover;
 }
-@media (max-width:480px)  { 
-    /* smartphones, Android phones, landscape iPhone */ 
 
-
+.banner-wrapper>div>div:first-child>div h2 span{
+    color:red;
 }
-@media (max-width:600px)  { 
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-    .header-wrapper ul{
+
+.banner-wrapper>div>div:first-child>div h3{
+    padding-block:20px 15px;
+}
+
+.banner-wrapper>div>div:first-child>div p{
+    width:90%;
+}
+
+.banner-wrapper>div>div:first-child>div ul {
+    display: flex;
+    gap: 15px;
+    margin-block: 15px;
+}
+  
+.banner-wrapper>div>div:first-child>div ul li a{
+    color:var(--first-color);
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius:50%;
+    transition: background 0.5s;
+}
+
+.banner-wrapper>div>div:first-child>div ul li a:hover {
+    background-color: #ffffff15;
+}
+
+
+.banner-wrapper>div>div:first-child>div>div>span a {
+    display: flex;
+    align-items: center;
+    gap:20px !important;
+    border-radius: 4px ;   
+}
+/* banner ends */
+
+/* stack starts */
+.stack{
+    background-color:var(--first-bg-dark);
+}
+
+.stack-wrapper>div>div:first-child>div img{
+    width:90%;
+}
+
+.stack-wrapper>div>div:last-child>div h2{
+    padding-bottom: 40px;
+}
+
+.stack-wrapper>div>div:last-child>div h6{
+    padding-bottom:10px;
+}
+
+.stack-wrapper>div>div:last-child>div img{
+    width:100%;
+}
+/* stack ends */
+
+/* wave starts */
+.wave{
+    padding: 0px;
+}
+
+.wave img{
+    height:350px;
+    width:100%;
+}
+/* wave ends */
+
+/* connect starts */
+.connect{
+    background-color: #091C34;
+    padding-block:0px 40px;
+}
+
+.connect-wrapper>div>div:first-child>h3{
+    font-size: 40px;
+    font-weight:500;
+    padding-bottom: 40px;
+}
+
+.connect-wrapper>div>div:first-child>div>ul>li{
+    padding-bottom:15px;
+}
+
+.connect-wrapper>div>div:first-child>div>ul>li>a{
+    display: flex;   
+    align-items: center;
+    gap: 10px;
+    color: var(--first-color);
+}
+
+.connect-wrapper>div>div:first-child>div>ul>li:hover>a{
+    color: var(--second-color);
+}
+
+.connect-wrapper>div>div:first-child>div>ul>li>a>i{
+    font-size: 30px;
+}
+
+.connect-wrapper>div>div:first-child>div>div>img{
+    width:60%
+}
+
+.connect-wrapper>div>div:last-child>form>div{
+    padding-bottom: 15px;
+}
+
+.connect-wrapper>div>div:last-child>h3{
+    padding-bottom: 10px;
+}
+
+.connect-wrapper>div>div:last-child>form>div>input,
+.connect-wrapper>div>div:last-child>form>div>textarea{
+    border:rgba(123, 121, 121, 0.682) 1px solid;
+    background-color: transparent;
+    width: 100%;
+    color: var(--first-color);
+}
+
+/* media query */
+@media only screen and (max-width: 1300px) {
+
+    /* header starts */
+    .header-wrapper>div>div:last-child>div ul {
+      display: none !important;
+    }
+
+    .header-wrapper>div>div:last-child>div span i{
+        display: inline-block;
+    }
+    /* header ends */
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    /* banner starts */
+
+    .banner-wrapper>div>div:last-child{
         display: none;
     }
 
-    .header-wrapper span{
-        display:block;
+}
+
+@media only screen and (max-width: 768px){
+    h2{
+        font-size:40px;
     }
 
+    h3{
+        font-size:24px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    /* banner starts */
+    .banner-wrapper>div>div:first-child>div ul li a{
+        font-size: 23px;    
+    }  
 }
-@media (max-width:801px)  { 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
 
+@media only screen and (max-width: 375px){
+    /* common stling */
+    section{
+        padding-block:70px;
+    }
 
- }
-
+    /* banner starts */
+    .banner-wrapper>div>div:first-child>div>div{
+        flex-direction: column;
+        align-items: start !important;
+    }
+}
