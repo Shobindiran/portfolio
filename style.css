@@ -82,6 +82,11 @@ header .container{
     max-width:1500px;
 }
 
+.header-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-wrapper ul>li>a{
     color:var(--first-color);
     font-size: 14px;
@@ -104,6 +109,33 @@ header .container{
 .header-wrapper>div>div:last-child>div span i{
     font-size: 25px;
     display: none;
+}
+
+/* mobile nav */
+.mobile-menu{
+    display: none;
+}
+
+.show-menu{
+    display: block;
+}
+
+.mobile-menu>ul{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    border-top: var(--first-color) 1px solid;
+}
+
+.mobile-menu>ul>li{
+        padding-bottom: 20px;
+}
+
+.bar{
+    position: absolute;
+    top :15px;
+    right: 15px;
 }
 /* header ends */
 
@@ -317,8 +349,13 @@ header .container{
 @media only screen and (max-width: 1300px) {
 
     /* header starts */
+
     .header-wrapper>div>div:last-child>div ul {
-      display: none !important;
+      display: none ;
+    }
+
+    .show-menu{
+        display: block;
     }
 
     .header-wrapper>div>div:last-child>div span i{
