@@ -248,13 +248,13 @@ header .container{
     gap:10px
 }
 
-.project>div>div:first-child>div:nth-child(2)>a{
+.project>div>div:first-child>div:nth-child(2)>span>a{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.project>div>div:first-child>div:nth-child(2)>a>i{
+.project>div>div:first-child>div:nth-child(2)>span>a>i{
     font-size: 20px;
 }
 
