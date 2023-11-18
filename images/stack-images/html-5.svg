@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"/>
-<path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"/>
-<path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_27_17)">
+<path d="M66.6667 714.286L0 0H800L733.333 714.286L400 800L66.6667 714.286Z" fill="#E44D26"/>
+<path d="M733.333 57.1428H400V757.143L666.667 685.714L733.333 57.1428Z" fill="#F16529"/>
+<path d="M183.333 414.286L150 142.857H666.667L650 228.571H250L266.667 328.571H633.333L600 600L400 657.143L200 600L183.333 457.143H283.333L300 528.571L400 557.143L500 528.571L516.667 414.286H183.333Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_27_17">
+<rect width="800" height="800" fill="white"/>
+</clipPath>
+</defs>
 </svg>

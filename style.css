@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5,h6,ul,p{
     --first-color: #ffffff;
     --second-color: #c6ff00;
     --first-bg-dark:#161625;
+    --project-bg:#070422;
 }
 
 body{
@@ -28,6 +29,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+h1{
+    font-size:100px;
+    font-weight: 300;
 }
 
 h2{
@@ -67,6 +73,7 @@ header{
     font-family: "Poppins", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: fixed;
+    z-index: 1;
     width: 100%;
     top: 0px;
 }
@@ -158,14 +165,85 @@ header .container{
     padding-bottom: 40px;
 }
 
-.stack-wrapper>div>div:last-child>div h6{
-    padding-bottom:10px;
-}
-
 .stack-wrapper>div>div:last-child>div img{
     width:100%;
+    margin-top: 20px;
 }
 /* stack ends */
+
+
+/* featured project starts */
+
+.mid-div{
+    width: 100%;
+}
+.mid-div.mid-div-down{
+    transform: rotate(180deg);
+}
+
+.featured-projects{
+    background-color: var(--first-bg-dark);
+}
+
+.featured-projects>div:nth-of-type(odd){
+    background-color: var(--project-bg);
+}
+
+/* featured project ends */
+
+
+/*commmon styling for all projects starts */
+
+.project>h2{
+    text-align: center;
+    padding-bottom:30px ;
+}
+
+.project>div>div:first-child>div:first-child>p{
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.project>div>div:first-child>div:first-child>p>span{
+    color: var(--second-color);
+    font-weight: 700;
+}
+
+/* button div */
+.project>div>div:first-child>div:nth-child(2){
+    padding-block: 30px;
+    display: flex;
+    gap:10px
+}
+
+.project>div>div:first-child>div:nth-child(2)>a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project>div>div:first-child>div:nth-child(2)>a>i{
+    font-size: 20px;
+}
+
+.project>div>div:first-child>div:last-child{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.project>div>div:first-child>div:last-child>img{
+    width: 50px; 
+    height: 50px; 
+}
+
+.project>div>div:last-child>div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/*commmon styling for all projects ends */
 
 /* wave starts */
 .wave{
@@ -223,11 +301,17 @@ header .container{
 
 .connect-wrapper>div>div:last-child>form>div>input,
 .connect-wrapper>div>div:last-child>form>div>textarea{
-    border:rgba(123, 121, 121, 0.682) 1px solid;
+    border:#7b7979 1px solid;
     background-color: transparent;
     width: 100%;
     color: var(--first-color);
 }
+
+.connect-wrapper>div>div:last-child>form>div>input:focus,
+.connect-wrapper>div>div:last-child>form>div>textarea:focus{
+    border:var(--second-color) 1px solid  ;
+}
+
 
 /* media query */
 @media only screen and (max-width: 1300px) {
@@ -255,6 +339,11 @@ header .container{
 }
 
 @media only screen and (max-width: 768px){
+
+    h1{
+        font-size: 60px;
+    }
+
     h2{
         font-size:40px;
     }
@@ -283,5 +372,26 @@ header .container{
     .banner-wrapper>div>div:first-child>div>div{
         flex-direction: column;
         align-items: start !important;
+    }
+
+    /* project starts */
+    .project>div>div:first-child>div:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project>div>div:first-child>div:last-child{
+        justify-content: center;
+    }
+
+    .project>div>div:first-child>div:last-child>img{
+        width: 30px; 
+        height: 30px; 
+    }
+
+    /* connect starts */
+    .connect-wrapper>div>div:first-child>div>div>img{
+        display: none;
     }
 }

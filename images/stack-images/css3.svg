@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg height="800px" width="800px" xmlns="http://www.w3.org/2000/svg"
-aria-label="CSS3" role="img"
-viewBox="0 0 512 512"><path fill="#264de4"
-d="M72 460L30 0h451l-41 460-184 52"/><path fill="#2965f1"
-d="M256 37V472l149-41 35-394"/><path fill="#ebebeb"
-d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382"/><path fill="#ffffff"
-d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z"/></svg>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_27_12)">
+<path d="M76.5011 718.75L2 0H802L729.273 718.75L402.887 800" fill="#264DE4"/>
+<path d="M402.887 57.8125V737.5L667.189 673.438L729.273 57.8125" fill="#2965F1"/>
+<path d="M151.002 146.875H402.887V234.375H159.871M168.741 325H402.887V414.062H177.61M182.931 457.812H282.266L289.361 528.125L402.887 554.688V646.875L195.348 596.875" fill="#EBEBEB"/>
+<path d="M402.887 325V414.062H525.282L512.865 528.125L402.887 554.688V646.875L606.878 596.875L652.998 146.875H402.887V234.375H544.794L535.038 325H402.887Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_27_12">
+<rect width="800" height="800" fill="white"/>
+</clipPath>
+</defs>
+</svg>
