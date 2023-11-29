@@ -343,6 +343,28 @@ header .container{
 .connect-wrapper>div>div:last-child>form>div>textarea:focus{
     border:var(--second-color) 1px solid  ;
 }
+/* Connect ends */
+
+/* thanks starts */
+.thanks{
+    background-color: var(--first-bg-dark);
+    height: 100vh;
+}
+
+.thanks-wrapper>div>div{
+    max-width: 500px;
+    margin:20px auto;
+}
+
+.thanks-wrapper>div>div>img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.thanks-wrapper h5{
+    margin-top: 20px;
+}
+/* thank ends */
 
 
 /* media query */

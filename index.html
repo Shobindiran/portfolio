@@ -12,9 +12,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Pangolin&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="icon" href="./images/web-icon.png">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -249,15 +251,19 @@
 
                     <div class="col-lg-6  ">
                         <h3>Say Hi</h3>
-                        <form id="message-form">
+                        <form id="message-form" action="https://formsubmit.co/964c78de755f366b16d99a20a91f75c7" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="Job offer!!">
+                            <input type="hidden" name="_next" value="https://shobindiran.netlify.app/pages/thanks.html">
                             <div>
                                 <label for="name">Name*</label>
-                                <input type="text" required>
+                                <input type="text" name="name" required>
                             </div>
     
                             <div>
                                 <label for="email">Email*</label>
-                                <input type="email" required>
+                                <input type="email" name="email" required>
                             </div>
     
                             <div>
