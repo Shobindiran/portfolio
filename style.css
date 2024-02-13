@@ -331,16 +331,17 @@ header .container{
     padding-bottom: 10px;
 }
 
-.connect-wrapper>div>div:last-child>form>div>input,
-.connect-wrapper>div>div:last-child>form>div>textarea{
+#message-form>div>input,
+#message-form>div>textarea{
     border:#7b7979 1px solid;
     background-color: transparent;
     width: 100%;
     color: var(--first-color);
+    outline: none;
 }
 
-.connect-wrapper>div>div:last-child>form>div>input:focus,
-.connect-wrapper>div>div:last-child>form>div>textarea:focus{
+#message-form>div>input:focus,
+#message-form>div>textarea:focus{
     border:var(--second-color) 1px solid  ;
 }
 /* Connect ends */
